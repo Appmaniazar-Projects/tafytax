@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link"
-import Image from "next/image"
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -55,7 +55,7 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button asChild>
-            <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+            <Link href="/contact">
               Book Consultation
             </Link>
           </Button>
@@ -102,7 +102,7 @@ export function Header() {
                 </div>
                 <div className="py-6">
                   <Button asChild className="w-full">
-                    <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
                     </Link>
                   </Button>

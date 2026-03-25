@@ -183,7 +183,7 @@ export default function ServicesPage() {
                     </p>
                     <div className="mt-8">
                       <Button asChild>
-                        <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+                        <Link href="/contact">
                           Get Started
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
@@ -240,7 +240,7 @@ export default function ServicesPage() {
               </p>
               <div className="mt-10">
                 <Button size="lg" className="bg-gold text-primary hover:bg-gold/90" asChild>
-                  <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+                  <Link href="/contact">
                     Book Consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

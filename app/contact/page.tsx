@@ -1,9 +1,9 @@
-import { Metadata } from "next"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact/contact-form"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import { GeometricPattern, DotsPattern } from "@/components/ui/shapes"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
+import { DotsPattern, GeometricPattern } from "@/components/ui/shapes"
+import { Clock, Mail, MapPin, Phone } from "lucide-react"
+import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Contact Us | Tafy Tax Consultants",
@@ -13,17 +13,20 @@ export const metadata: Metadata = {
 const contactInfo = [
   {
     name: "Email",
-    description: "dubetafy@gmail.com",
+    description: "info@tafytax.com",
+    href: "mailto:info@tafytax.com",
     icon: Mail,
   },
   {
     name: "Phone",
-    description: "079 7807 2032",
+    description: "+27 681 802 531",
+    href: "tel:+27681802531",
     icon: Phone,
   },
   {
     name: "Office",
-    description: "Belhar, Cape Town, 65 St Vincent Drive",
+    description: "65 St Vincent Drive, Belhar, Cape Town, Western Cape 7493",
+    href: "https://maps.google.com/?q=65+St+Vincent+Drive,+Belhar,+Cape+Town",
     icon: MapPin,
   },
   {
@@ -88,7 +91,15 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <dt className="font-semibold text-foreground">{item.name}</dt>
-                          <dd className="mt-1 text-muted-foreground">{item.description}</dd>
+                          {item.href ? (
+                            <dd className="mt-1">
+                              <a href={item.href} className="text-sky-blue hover:text-sky-blue/80 transition-colors">
+                                {item.description}
+                              </a>
+                            </dd>
+                          ) : (
+                            <dd className="mt-1 text-muted-foreground">{item.description}</dd>
+                          )}
                         </div>
                       </div>
                     ))}
@@ -99,7 +110,7 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold text-foreground">Our Location</h3>
                     <div className="mt-4 aspect-video w-full overflow-hidden rounded-xl border border-border bg-secondary">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6677456988686!2d-74.01248908429568!3d40.70550407933153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2sFinancial%20District%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1647894652983!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.0426098963426!2d18.666266!3d-33.893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdd62089ce0e9b%3A0x500ebb6dc75e7f20!2s65%20St%20Vincent%20Drive%2C%20Belhar%2C%20Cape%20Town%2C%207493!5e0!3m2!1sen!2sza!4v1647894652983!5m2!1sen!2sza"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

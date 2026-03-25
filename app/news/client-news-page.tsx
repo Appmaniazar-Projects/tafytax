@@ -1,12 +1,12 @@
 "use client"
 
-import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
 import { Card, CardContent } from "@/components/ui/card"
-import { User, ArrowRight } from "lucide-react"
+import { DotsPattern, FloatingCircles } from "@/components/ui/shapes"
+import { ArrowRight, User } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
-import { FloatingCircles, DotsPattern } from "@/components/ui/shapes"
 
 interface NewsArticle {
   id: string
@@ -169,15 +169,13 @@ export default function ClientNewsPage({ newsArticles, categories }: ClientNewsP
                 Subscribe to our newsletter for the latest tax updates, financial tips, and industry news delivered to your inbox.
               </p>
               <div className="mt-10">
-                <a
-                  href="https://calendly.com/tafytax/consultation"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-gold/90"
                 >
                   Book Consultation
                   <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

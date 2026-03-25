@@ -1,6 +1,6 @@
-import Link from "next/link"
+import { Linkedin, Mail, Twitter } from "lucide-react"
 import Image from "next/image"
-import { Linkedin, Twitter, Mail } from "lucide-react"
+import Link from "next/link"
 
 const navigation = {
   services: [
@@ -82,15 +82,22 @@ export function Footer() {
             <div>
               <h3 className="text-sm font-semibold leading-6 text-primary-foreground">Contact</h3>
               <ul role="list" className="mt-6 space-y-4">
-                <li className="text-sm leading-6 text-primary-foreground/70">
-                  info@tafytax.com
+                <li className="text-sm leading-6">
+                  <a href="mailto:info@tafytax.com" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    info@tafytax.com
+                  </a>
                 </li>
-                <li className="text-sm leading-6 text-primary-foreground/70">
-                  +1 (555) 123-4567
+                <li className="text-sm leading-6">
+                  <a href="tel:+27681802531" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    +27 681 802 531
+                  </a>
                 </li>
-                <li className="text-sm leading-6 text-primary-foreground/70">
-                  123 Financial District<br />
-                  New York, NY 10004
+                <li className="text-sm leading-6">
+                  <a href="https://maps.google.com/?q=65+St+Vincent+Drive,+Belhar,+Cape+Town" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    65 St Vincent Drive<br />
+                    Belhar, Cape Town<br />
+                    Western Cape 7493
+                  </a>
                 </li>
               </ul>
             </div>

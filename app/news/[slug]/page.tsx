@@ -1,13 +1,13 @@
-import { Metadata } from "next"
-import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Card, CardContent } from "@/components/ui/card"
+import { Header } from "@/components/header"
 import { Button } from "@/components/ui/button"
-import { Calendar, User, Clock, ArrowLeft, ArrowRight } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { FloatingCircles, TrianglePattern } from "@/components/ui/shapes"
+import { ArrowLeft, ArrowRight, Calendar, Clock, User } from "lucide-react"
+import { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { additionalArticles } from "./additional-articles"
-import { FloatingCircles, TrianglePattern } from "@/components/ui/shapes"
 
 const articles = {
   "training-capacity-building": {
@@ -487,7 +487,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {/* Article Actions */}
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Button asChild className="flex-1">
-                <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+                <Link href="/contact">
                   Book Consultation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -550,7 +550,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </p>
               <div className="mt-10">
                 <Button size="lg" className="bg-gold text-primary hover:bg-gold/90" asChild>
-                  <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+                  <Link href="/contact">
                     Schedule Consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

@@ -1,11 +1,11 @@
-import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
+import { CTASection } from "@/components/home/cta-section"
 import { HeroSection } from "@/components/home/hero-section"
+import { InsightsSection } from "@/components/home/insights-section"
+import { ProcessSection } from "@/components/home/process-section"
 import { ServicesSection } from "@/components/home/services-section"
 import { WhyUsSection } from "@/components/home/why-us-section"
-import { ProcessSection } from "@/components/home/process-section"
-import { InsightsSection } from "@/components/home/insights-section"
-import { CTASection } from "@/components/home/cta-section"
 
 export default function Home() {
   return (

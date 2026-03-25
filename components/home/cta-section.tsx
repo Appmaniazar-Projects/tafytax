@@ -1,7 +1,9 @@
-import Link from "next/link"
+'use client'
+
 import { Button } from "@/components/ui/button"
+import { DotsPattern } from "@/components/ui/shapes"
 import { ArrowRight } from "lucide-react"
-import { DotsPattern, TrianglePattern } from "@/components/ui/shapes"
+import Link from "next/link"
 
 export function CTASection() {
   return (
@@ -17,7 +19,7 @@ export function CTASection() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-4">
             <Button size="lg" className="bg-gold text-primary hover:bg-gold/90" asChild>
-              <Link href="https://calendly.com/tafytax/consultation" target="_blank" rel="noopener noreferrer">
+              <Link href="/contact">
                 Book Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
