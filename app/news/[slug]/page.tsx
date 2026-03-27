@@ -401,6 +401,14 @@ Contact our expert team to ensure your international structures are compliant an
   ...additionalArticles
 }
 
+// Generate static params for all articles
+export async function generateStaticParams() {
+  const slugs = Object.keys(articles)
+  return slugs.map((slug) => ({
+    slug: slug,
+  }))
+}
+
 // Generate metadata for each article
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const resolvedParams = await params

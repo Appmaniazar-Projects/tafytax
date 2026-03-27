@@ -1,0 +1,5 @@
+:HL["/tafytax/_next/static/chunks/665dc3aa4aa2d85c.css","style"]
+:HL["/tafytax/_next/static/chunks/5757318c7eb5ce89.css","style"]
+:HL["/tafytax/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://assets.calendly.com/assets/external/widget.css","style"]
+0:{"buildId":"zOpjG2q4W9Z5c_V8FwUzf","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"news","paramType":null,"paramKey":"news","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"foreign-trusts-tax","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
