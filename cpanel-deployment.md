@@ -16,7 +16,7 @@ npm install
 npm run build
 ```
 
-This will create a `dist` folder with static files ready for deployment.
+This will create an `out` folder with static files ready for deployment.
 
 ### 2. Upload to cPanel
 
@@ -25,14 +25,14 @@ This will create a `dist` folder with static files ready for deployment.
 2. Open File Manager
 3. Navigate to `public_html`
 4. Create a new folder called `tafytax`
-5. Upload all files from the `dist` folder to `public_html/tafytax`
+5. Upload all files from the `out` folder to `public_html/tafytax`
 6. Upload the `.htaccess` file to `public_html/tafytax`
 
 #### Method 2: Using FTP/SFTP
 1. Connect to your hosting account
 2. Navigate to `public_html`
 3. Create `tafytax` folder
-4. Upload all files from `dist` folder to `public_html/tafytax`
+4. Upload all files from `out` folder to `public_html/tafytax`
 5. Upload `.htaccess` to `public_html/tafytax`
 
 ### 3. Configure Domain
@@ -99,6 +99,6 @@ basePath: undefined,
 3. Update `.htaccess` to remove `/tafytax` references
 
 ## Maintenance
-- To update the site, rebuild locally and re-upload the `dist` folder contents
-- Keep a backup of your `dist` folder before uploading new versions
+- To update the site, rebuild locally and re-upload the `out` folder contents
+- Keep a backup of your `out` folder before uploading new versions
 - Test thoroughly after each deployment

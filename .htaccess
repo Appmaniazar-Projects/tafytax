@@ -1,16 +1,13 @@
 # Enable rewrite engine
 RewriteEngine On
 
-# Handle trailing slashes
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$
-RewriteRule ^(.*)$ /tafytax/$1 [L]
+# Set directory index to index.html
+DirectoryIndex index.html
 
-# Redirect to index.html for SPA routing
+# If request is not a file or directory, serve index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ /tafytax/index.html [L]
+RewriteRule ^ index.html [L]
 
 # Set proper MIME types
 AddType text/css .css

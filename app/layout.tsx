@@ -12,23 +12,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Tafy Tax Consultants | Strategic Tax & Financial Advisory',
   description: 'Helping businesses navigate complex tax regulations, cross-border operations, and financial planning with expert advisory services.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/images/logo.png',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: {
+      url: '/images/logo.png',
+      sizes: '180x180',
+      type: 'image/png',
+    },
   },
 }
 
@@ -40,6 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/images/logo.png" sizes="any" />
+        <link rel="icon" href="/images/logo.png" sizes="32x32" />
+        <link rel="icon" href="/images/logo.png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="shortcut icon" href="/images/logo.png" />
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>

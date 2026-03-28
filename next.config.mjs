@@ -8,9 +8,7 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  distDir: 'dist',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/tafytax' : undefined,
-  basePath: process.env.NODE_ENV === 'production' ? '/tafytax' : undefined,
+  distDir: 'out',
 }
 
 export default nextConfig
