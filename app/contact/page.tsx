@@ -19,8 +19,8 @@ const contactInfo = [
   },
   {
     name: "Phone",
-    description: "+27 681 802 531",
-    href: "tel:+27681802531",
+    description: "+27 70 722 0518",
+    href: "tel:+27707220518",
     icon: Phone,
   },
   {

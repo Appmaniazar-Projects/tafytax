@@ -45,6 +45,11 @@ Your website will be accessible at:
 - Verify the Calendly button appears
 - Test navigation between pages
 
+### 5. SEO (after deploy to production domain)
+- Confirm `https://tafytax.com/robots.txt` and `https://tafytax.com/sitemap.xml` load
+- In [Google Search Console](https://search.google.com/search-console) → **Sitemaps**, submit `https://tafytax.com/sitemap.xml`
+- Replace `public/og-image.jpg` with a branded **1200×630** image for social sharing (optional but recommended)
+
 ## Important Notes
 
 ### Base Path Configuration
