@@ -4,10 +4,10 @@ import { Calculator, FileText, ShieldCheck, GraduationCap, Monitor, ArrowRight }
 
 const services = [
   {
-    title: "Cloud Accounting Solutions",
-    description: "Modern cloud-based accounting with real-time insights and automated workflows for scalable business growth.",
-    icon: Calculator,
-    href: "/services#cloud-accounting",
+    title: "Tax Services & Consulting",
+    description: "Expert tax planning, compliance, and advisory services to minimize liabilities and maximize savings.",
+    icon: FileText,
+    href: "/services#tax-services",
   },
   {
     title: "Corporate Finance Services",
@@ -16,16 +16,10 @@ const services = [
     href: "/services#cfo-services",
   },
   {
-    title: "Tax Services & Consulting",
-    description: "Expert tax planning, compliance, and advisory services to minimize liabilities and maximize savings.",
-    icon: FileText,
-    href: "/services#tax-services",
-  },
-  {
-    title: "Audit & Assurance",
-    description: "Comprehensive audit services and financial assurance to ensure compliance and business integrity.",
-    icon: ShieldCheck,
-    href: "/services#audit-assurance",
+    title: "Cloud Accounting Solutions",
+    description: "Modern cloud-based accounting with real-time insights and automated workflows for scalable business growth.",
+    icon: Calculator,
+    href: "/services#cloud-accounting",
   },
   {
     title: "Training & Development",
@@ -38,6 +32,12 @@ const services = [
     description: "Find the right software for your needs and learn to use it like a pro.",
     icon: Monitor,
     href: "/insights",
+  },
+  {
+    title: "Audit & Assurance",
+    description: "Comprehensive audit services and financial assurance to ensure compliance and business integrity.",
+    icon: ShieldCheck,
+    href: "/services#audit-assurance",
   },
 ]
 
