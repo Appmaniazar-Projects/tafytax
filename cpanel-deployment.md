@@ -13,7 +13,7 @@
 npm install
 
 # Build for cPanel
-npm run build
+npm run build:clean
 ```
 
 This will create an `out` folder with static files ready for deployment.
