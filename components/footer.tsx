@@ -93,10 +93,10 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="text-sm leading-6">
-                  <a href="https://maps.google.com/?q=65+St+Vincent+Drive,+Belhar,+Cape+Town" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                    65 St Vincent Drive<br />
-                    Belhar, Cape Town<br />
-                    Western Cape 7493
+                  <a href="https://maps.google.com/?q=11+Robert+Sobukwe+Rd,+Bellville,+Cape+Town,+7530" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                    11 Robert Sobukwe Rd<br />
+                    Bellville, Cape Town<br />
+                    7530
                   </a>
                 </li>
               </ul>

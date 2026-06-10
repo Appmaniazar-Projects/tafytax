@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "clean": "node scripts/clean.mjs",
-    "build": "npm run clean && next build",
-    "build:cpanel": "npm run build",
+    "build": "next build",
+    "build:clean": "npm run clean && next build",
+    "build:cpanel": "npm run build:clean",
     "export": "next export",
     "start": "next start",
     "lint": "eslint ."
@@ -67,6 +68,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
     "@types/node": "^22",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "postcss": "^8.5.15",

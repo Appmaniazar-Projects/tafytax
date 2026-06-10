@@ -18,6 +18,7 @@ const services = [
   { value: "cross-border", label: "Cross-border Tax Structuring" },
   { value: "capital-gains", label: "Capital Gains & Investment Tax" },
   { value: "financial", label: "Strategic Financial Advisory" },
+  { value: "software-reviews", label: "Accounting Software Reviews & Training" },
   { value: "training", label: "Training & Capacity Building" },
   { value: "other", label: "Other / General Inquiry" },
 ]

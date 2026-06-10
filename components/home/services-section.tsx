@@ -31,7 +31,7 @@ const services = [
     title: "Accounting Software Reviews and Training",
     description: "Find the right software for your needs and learn to use it like a pro.",
     icon: Monitor,
-    href: "/insights",
+    href: "/services#accounting-reviews-training",
   },
   {
     title: "Audit & Assurance",
