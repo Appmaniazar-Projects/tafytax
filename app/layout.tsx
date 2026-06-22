@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { CalendlyWidget } from '@/components/calendly-widget';
 import './globals.css';
+import Script from "next/script";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -71,6 +72,22 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/images/logo.png" />
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
       </head>
+              {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-TF2P5JLK5K`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-TF2P5JLK5K');
+          `}
+        </Script>
+      
       <body suppressHydrationWarning className={`${inter.variable} font-sans antialiased`}>
         {children}
         <Analytics />
